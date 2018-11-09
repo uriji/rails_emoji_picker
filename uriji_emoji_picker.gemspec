@@ -1,4 +1,3 @@
-# coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'uriji_emoji_picker/version'
@@ -6,12 +5,12 @@ require 'uriji_emoji_picker/version'
 Gem::Specification.new do |spec|
   spec.name          = 'uriji_emoji_picker'
   spec.version       = UrijiEmojiPicker::VERSION
-  spec.authors       = ['ID25']
-  spec.email         = ['xid25x@gmail.com']
+  spec.authors       = ['Carlos Serrada']
+  spec.email         = ['cserradag96@gmail.com']
 
   spec.summary       = 'Simple Emoji picker for your app'
   spec.description   = 'Simple Emoji picker for your app'
-  spec.homepage      = 'https://github.com/ID25/uriji_emoji_picker'
+  spec.homepage      = 'https://github.com/uriji/uriji-emoji-picker'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
