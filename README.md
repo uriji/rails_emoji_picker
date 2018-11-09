@@ -1,7 +1,7 @@
 # Uriji Emoji Picker
 
 #### Simple integration of emoji picker with your rails application.
-[![GitHub version](https://badge.fury.io/gh/ID25%2Furiji_emoji_picker.svg)](https://badge.fury.io/gh/ID25%2Furiji_emoji_picker)
+[![Gem](https://img.shields.io/gem/v/uriji-icons-rails.svg)](https://rubygems.org/gems/uriji-emoji-picker)
 
 ## Preview
 <img src="http://i.giphy.com/l2JI5BX9bj3V7PPlC.gif" alt="Uriji Emoji Picker">
