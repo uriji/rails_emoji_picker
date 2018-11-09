@@ -1,6 +1,7 @@
 require_relative './emoji_regex'
 
-module RailsEmojiPicker
+# UrijiEmojiPicker
+module UrijiEmojiPicker
   def content_with_emoji(text)
     find_emoji(text)
   end
@@ -11,7 +12,7 @@ module RailsEmojiPicker
     string  = replace_unicode_moji_with_images(text) || text
     emoji   = string.scan(regex)
     unicodes = []
-    index = RailsEmojiPicker::EmojiMap.new
+    index = UrijiEmojiPicker::EmojiMap.new
 
     emoji.each do |e|
       next if e.empty?
@@ -45,7 +46,7 @@ module RailsEmojiPicker
   end
 
   def replace_unicode_moji_with_images(string)
-    index = RailsEmojiPicker::EmojiMap.new
+    index = UrijiEmojiPicker::EmojiMap.new
 
     string.gsub!(regex) do |moji|
       if moji.size < 2 && index.find_by_moji(moji)
@@ -60,14 +61,7 @@ module RailsEmojiPicker
   end
 
   def insert_image_to_image_tag(string, img)
-    return stanadrt_replace(string, img) unless defined? Rails
-
-    if Rails.env.development?
-      stanadrt_replace(string, img)
-    elsif Rails.env.production?
-      url = image_tag("emoji/#{img[:name]}.png")[/img.*?src="(.*?)"/i, 1]
-      string.gsub!(img[:char], url)
-    end
+    stanadrt_replace(string, img)
   end
 
   def stanadrt_replace(string, img)
@@ -75,14 +69,14 @@ module RailsEmojiPicker
   end
 
   def regex
-    RailsEmojiPicker::EmojiRegex.regex
+    UrijiEmojiPicker::EmojiRegex.regex
   end
 
   def emoji_map
-    RailsEmojiPicker::EmojiMap
+    UrijiEmojiPicker::EmojiMap
   end
 
   def exceptions_emoji(emoji)
-    RailsEmojiPicker::EmojiExceptions.call(emoji)
+    UrijiEmojiPicker::EmojiExceptions.call(emoji)
   end
 end

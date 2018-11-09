@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe RailsEmojiPicker do
-  helper = Class.new.extend(RailsEmojiPicker)
+describe UrijiEmojiPicker do
+  helper = Class.new.extend(UrijiEmojiPicker)
 
   describe '#content_with_emoji' do
     correct_emoji_format = helper.content_with_emoji("⚽️ Soccer emoji")

@@ -1,4 +1,4 @@
-module RailsEmojiPicker
+module UrijiEmojiPicker
   class EmojiExceptions
     class << self
       def call(emoji)

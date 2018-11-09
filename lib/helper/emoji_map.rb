@@ -1,7 +1,7 @@
 require 'forwardable'
 require 'json'
 
-module RailsEmojiPicker
+module UrijiEmojiPicker
   class EmojiMap
     extend Forwardable
 

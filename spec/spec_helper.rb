@@ -1,2 +1,2 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'rails_emoji_picker'
+require 'uriji_emoji_picker'

@@ -1,24 +1,24 @@
-# Rails Emoji Picker
+# Uriji Emoji Picker
 
 #### Simple integration of emoji picker with your rails application.
-[![GitHub version](https://badge.fury.io/gh/ID25%2Frails_emoji_picker.svg)](https://badge.fury.io/gh/ID25%2Frails_emoji_picker) [![Build Status](https://travis-ci.org/ID25/rails_emoji_picker.svg?branch=master)](https://travis-ci.org/ID25/rails_emoji_picker)
+[![GitHub version](https://badge.fury.io/gh/ID25%2Furiji_emoji_picker.svg)](https://badge.fury.io/gh/ID25%2Furiji_emoji_picker) [![Build Status](https://travis-ci.org/ID25/uriji_emoji_picker.svg?branch=master)](https://travis-ci.org/ID25/uriji_emoji_picker)
 
 ## Preview
-<img src="http://i.giphy.com/l2JI5BX9bj3V7PPlC.gif" alt="Rails Emoji Picker">
+<img src="http://i.giphy.com/l2JI5BX9bj3V7PPlC.gif" alt="Uriji Emoji Picker">
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rails_emoji_picker'
+gem 'uriji_emoji_picker'
 ```
 
 ## Usage
 
 Run command
 ```bash
-rails g rails_emoji_picker:install
+rails g uriji_emoji_picker:install
 ```
 
 It copies emoji images to your `/assets/images` directory
@@ -28,7 +28,7 @@ It copies emoji images to your `/assets/images` directory
 `application.js`
 ```js
 //= require jquery
-//= require rails_emoji_picker
+//= require uriji_emoji_picker
 //= require_tree .
 ```
 
@@ -39,7 +39,7 @@ It copies emoji images to your `/assets/images` directory
 ```css
 /*
  *= require_tree .
- *= require rails_emoji_picker
+ *= require uriji_emoji_picker
  *= require bootstrap
  *= require_self
  */
@@ -48,7 +48,7 @@ It copies emoji images to your `/assets/images` directory
 `application.scss or sass`
 
 ```scss
-@import 'rails_emoji_picker'
+@import 'uriji_emoji_picker'
 ```
 Next step, wrap your text input with css class `emoji-picker-container`
 
@@ -91,13 +91,13 @@ Example:
 # => /initializers/emoji_picker.rb
 
 Emoji.asset_host = 'https://raw.githubusercontent.com'
-Emoji.asset_path = '/ID25/rails_emoji_picker/master/lib/generators/rails_emoji_picker/emoji/'
+Emoji.asset_path = '/ID25/uriji_emoji_picker/master/lib/generators/uriji_emoji_picker/emoji/'
 ```
 
 That's all! :smiley_cat:
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/ID25/rails_emoji_picker.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ID25/uriji_emoji_picker.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

@@ -1,4 +1,4 @@
-module RailsEmojiPicker
+module UrijiEmojiPicker
   module Generators
     class InstallGenerator < Rails::Generators::Base
       source_root File.dirname(__FILE__)
@@ -10,8 +10,8 @@ module RailsEmojiPicker
 
       def info
         puts "    =====================================================
-              #{yellow '😼  😼  😼  Rails Emoji Picker'} #{yellow RailsEmojiPicker::VERSION}  #{yellow '😼  😼  😼'}
-              #{blue 'Repository'}: 'https://github.com/ID25/rails_emoji_picker'
+              #{yellow '😼  😼  😼  Uriji Emoji Picker'} #{yellow UrijiEmojiPicker::VERSION}  #{yellow '😼  😼  😼'}
+              #{blue 'Repository'}: 'https://github.com/ID25/uriji_emoji_picker'
               #{blue 'Author'}: Eugene Domosedov (ID25)
 
           1. Add this data-attribute to your input/text field

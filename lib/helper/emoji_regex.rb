@@ -1,4 +1,4 @@
-module RailsEmojiPicker
+module UrijiEmojiPicker
   class EmojiRegex
     class << self
       def regex
