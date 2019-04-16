@@ -59,16 +59,22 @@ And add data-attribte `data: { emojiable: true }` to your input/text_area.
 </p>
 ```
 
-To see emoji in views, wrap your text with helper `content_with_emoji`.
+To see emoji in views, wrap your text with helper `emojify`.
 
 ```erb
-  <%= content_with_emoji(@post.title) %>
+  <%= emojify(@post.title) %>
 ```
 
 If you interpolate string, you need to call `html_safe`, because it's another string.
 
 ```erb
-  <%= "Post body: #{content_with_emoji(@post.body)}".html_safe %>
+  <%= "Post body: #{emojify(@post.body)}".html_safe %>
+```
+
+Also, you can render emojis with a javascript helper.
+
+```js
+  emojify(text)
 ```
 
 ## Emoji Asset Host

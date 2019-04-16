@@ -2,7 +2,7 @@ require_relative './emoji_regex'
 
 # UrijiEmojiPicker
 module UrijiEmojiPicker
-  def content_with_emoji(text)
+  def emojify(text)
     find_emoji(text)
   end
 

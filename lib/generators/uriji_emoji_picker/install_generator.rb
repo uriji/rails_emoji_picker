@@ -22,13 +22,13 @@ module UrijiEmojiPicker
 
             #{green 'p.emoji-picker-container'}
 
-          3. To show text with emoji, use helper content_with_emoji
+          3. To show text with emoji, use helper emojify
 
         Exaple:
           #{green 'p.emoji-picker-container'}
             #{green '= f.text_field :title, class: "form-control", data: { emojiable: true }'}
 
-          #{green '= content_with_emoji(@post.title)'}
+          #{green '= emojify(@post.title)'}
 
     =====================================================
           "
